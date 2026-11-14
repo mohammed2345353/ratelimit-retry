@@ -1,0 +1,17 @@
+{
+  "name": "ratelimit-retry",
+  "version": "0.1.0",
+  "description": "Retry Anthropic, OpenAI and Gemini API calls the way each provider tells you to: retry-after, ratelimit headers, RetryInfo, and never retrying billing or daily-quota errors.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": { ".": { "types": "./index.d.ts", "default": "./src/index.js" } },
+  "bin": { "ratelimit-retry": "./bin/ratelimit-retry.js" },
+  "files": ["src", "bin", "index.d.ts"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test" },
+  "keywords": ["anthropic", "openai", "gemini", "claude", "rate-limit", "retry", "429", "backoff", "retry-after", "llm"],
+  "repository": { "type": "git", "url": "git+https://github.com/mohammed2345353/ratelimit-retry.git" },
+  "author": "Mohammed Al-Saray",
+  "license": "MIT"
+}
